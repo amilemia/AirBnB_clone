@@ -74,24 +74,24 @@ Please refer to the AirBnB concept page for more details on the supported object
 
 ## - Examples:
 
-### Interactive Mode ->
+### Interactive Mode
 
     $ ./console.py
     (hbnb) help
 
-* Documented commands (type help <topic>):
+Documented commands (type help <topic>):
 ========================================
     EOF  help  quit
     (hbnb)
     (hbnb) quit
     $
 
-### Non-Interactive Mode ->
+### Non-Interactive Mode
 
     $ echo "help" | ./console.py
     (hbnb)
 
-* Documented commands (type help <topic>):
+Documented commands (type help <topic>):
 ========================================
     EOF  help  quit
     (hbnb)
