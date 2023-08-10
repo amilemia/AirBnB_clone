@@ -76,25 +76,43 @@ Please refer to the AirBnB concept page for more details on the supported object
 
 ### Interactive Mode
 
-    $ ./console.py
-    (hbnb) help
+```
+$ ./console.py
+(hbnb) help
 
-Documented commands (type help):
+Documented commands (type help <topic>):
 ========================================
-    EOF  help  quit
-    (hbnb)
-    (hbnb) quit
-    $
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
 
 ### Non-Interactive Mode
 
-    $ echo "help" | ./console.py
-    (hbnb)
+```
+$ echo "help" | ./console.py
+(hbnb)
 
-Documented commands (type help):
+Documented commands (type help <topic>):
 ========================================
-    EOF  help  quit
-    (hbnb)
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
 
 ## * Running Tests
 
