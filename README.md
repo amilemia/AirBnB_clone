@@ -79,7 +79,7 @@ Please refer to the AirBnB concept page for more details on the supported object
     $ ./console.py
     (hbnb) help
 
-Documented commands (type help <topic>):
+Documented commands (type help):
 ========================================
     EOF  help  quit
     (hbnb)
@@ -91,7 +91,7 @@ Documented commands (type help <topic>):
     $ echo "help" | ./console.py
     (hbnb)
 
-Documented commands (type help <topic>):
+Documented commands (type help):
 ========================================
     EOF  help  quit
     (hbnb)
