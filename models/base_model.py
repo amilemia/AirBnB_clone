@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This module defines the BaseModel class"""
 
 from uuid import uuid4
 from datetime import datetime
@@ -17,10 +18,8 @@ class BaseModel:
                 if key != "__class__":
                     setattr(self, key, value)
         else:
-            BaseModel.__nb_objects += 1
-            self.id = BaseModel.__nb_objects
-            self.created_at = datetime.now()
-            self.updated_at = datetime.now()
+            self.id = str(uuid4())
+            self.created_at = self.updated_at = datetime.now()
             storage.new(self)
 
     def __str__(self):

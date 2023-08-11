@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""This module defines the FileStorage class"""
 
 import json
 
 
 class FileStorage:
+    """
+    manages serialization and deserialization of objects to/from a JSON file
+    """
+
     __file_path = "file.json"
     __objects = {}
 
