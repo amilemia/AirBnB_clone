@@ -152,7 +152,7 @@ class TestConsole(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             console.HBNBCommand().onecmd('all')
             output = f.getvalue().strip()
-            self.assertEqual(output, '')
+            self.assertEqual(output, '[]')
 
         with patch('sys.stdout', new=StringIO()) as f:
             console.HBNBCommand().onecmd('all MyModel')
@@ -165,7 +165,7 @@ class TestConsole(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             console.HBNBCommand().onecmd('all')
             output = f.getvalue().strip()
-            expected_output = str(my_model1)
+            expected_output = f'[\"{str(my_model1)}\"]'
             self.assertEqual(output, expected_output)
 
         my_model2 = BaseModel()
