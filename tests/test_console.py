@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""test_console module"""
+
 import unittest
 from unittest.mock import patch
 from io import StringIO
@@ -8,6 +11,8 @@ from models.base_model import BaseModel
 
 
 class TestConsole(unittest.TestCase):
+    """TestHBNBCommand class"""
+
     def setUp(self):
         """Set up test cases"""
         self.storage = FileStorage()

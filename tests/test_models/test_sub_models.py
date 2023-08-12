@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""test_sub_modeles module"""
+
 import unittest
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
@@ -10,6 +13,8 @@ from models.review import Review
 
 
 class TestNewClasses(unittest.TestCase):
+    """Test cases for the sub classes"""
+
     def setUp(self):
         """Set up test cases"""
         self.storage = FileStorage()
