@@ -10,7 +10,7 @@ import pycodestyle
 
 class TestBaseModel(unittest.TestCase):
     """Test cases for the BaseModel class"""
-    
+
     def test_pycodestyle(self):
         """Test that the code follows pycodestyle guidelines"""
         style = pycodestyle.StyleGuide(quiet=True)
