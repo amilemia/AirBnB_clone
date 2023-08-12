@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""test_console module"""
+"""Unittest test_console module"""
 
 import unittest
 from unittest.mock import patch

@@ -6,7 +6,7 @@ import json
 
 class FileStorage:
     """
-    manages serialization and deserialization of objects to/from a JSON file
+    Manages serialization and deserialization of objects to/from a JSON file
     """
 
     __file_path = "file.json"
