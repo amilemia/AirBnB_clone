@@ -2,13 +2,6 @@
 """This module defines the FileStorage class"""
 
 import json
-from models.base_model import BaseModel
-from models.user import User
-from models.state import State
-from models.city import City
-from models.amenity import Amenity
-from models.place import Place
-from models.review import Review
 
 
 class FileStorage:
@@ -40,6 +33,13 @@ class FileStorage:
         try:
             with open(FileStorage.__file_path, 'r') as f:
                 obj_dict = json.load(f)
+                from models.base_model import BaseModel
+                from models.user import User
+                from models.state import State
+                from models.city import City
+                from models.amenity import Amenity
+                from models.place import Place
+                from models.review import Review
                 classes = {
                     'BaseModel': BaseModel,
                     'User': User,
