@@ -57,7 +57,28 @@ class HBNBCommand(cmd.Cmd):
             match = re.search(r"\((.*?)\)", argl[1])
             if match is not None:
                 command = [argl[1][:match.span()[0]], match.group()[1:-1]]
-                if command[0] in argdict.keys():
+                if command[0] == "update":
+                    args = split(command[1])
+                    if len(args) < 3:
+                        print('** missing arguments **')
+                    else:
+                        class_name = argl[0]
+                        obj_id = args[0]
+                        attr_name = args[1]
+                        attr_value = args[2].strip('"')
+                        if class_name not in self.classes:
+                            print("** class doesn't exist **")
+                        else:
+                            key = f"{class_name}.{obj_id}"
+                            all_objs = storage.all()
+                            if key not in all_objs:
+                                print('** no instance found **')
+                            else:
+                                obj = all_objs[key]
+                                setattr(obj, attr_name, attr_value)
+                                obj.save()
+                        return
+                elif command[0] in argdict.keys():
                     call = "{} {}".format(argl[0], command[1])
                     return argdict[command[0]](call)
         print("*** Unknown syntax: {}".format(arg))
