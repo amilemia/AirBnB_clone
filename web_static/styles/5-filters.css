@@ -7,35 +7,35 @@
 	width: 100%;
 	border: 1px solid #dddddd;
 	border-radius: 4px;
-  }
-  
-  .locations,
-  .amenities {
+}
+
+.locations,
+.amenities {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	height: 100%;
 	width: 25%;
-  }
-  
-  .locations {
+}
+
+.locations {
 	border-right: 1px solid #dddddd;
-  }
-  
-  .locations h3,
-  .amenities h3 {
+}
+
+.locations h3,
+.amenities h3 {
 	font-weight: 600;
 	margin: 2px 20px;
-  }
-  
-  .locations h4,
-  .amenities h4 {
+}
+
+.locations h4,
+.amenities h4 {
 	font-weight: 400;
 	font-size: 14px;
 	margin: 2px 20px;
-  }
-  
-  .search-button {
+}
+
+.search-button {
     position: absolute;
 	right: 30px;
 	font-size: 18px;
