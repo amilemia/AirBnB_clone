@@ -5,9 +5,3 @@ body {
     font-size: 14px;
     color: #484848;
 }
-
-div.logo {
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
